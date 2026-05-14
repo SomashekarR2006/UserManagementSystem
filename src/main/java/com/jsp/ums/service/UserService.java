@@ -24,7 +24,7 @@ public class UserService {
 	public ResponseEntity<?> saveUser(User u) {
 		User user=dao.saveUser(u);
 		rs.setStatus(201);
-		rs.setMessage("User saved Successfully!");
+		rs.setMessage("User saved Successfully Done!");
 		rs.setBody(user);
 		return ResponseEntity.status(201).body(rs);
 	}
